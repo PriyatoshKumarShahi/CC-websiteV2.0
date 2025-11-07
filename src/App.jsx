@@ -1,16 +1,16 @@
-import { Routes, Route, Link } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import Offering from './components/Offering'
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-     
-      </Routes>
-    </div>
-  );
+   <>
+   <Routes>
+     <Route path="/" element={<HomePage />} />
+     <Offering/>
+   </Routes>
+   </>
+  )
 }
 
 export default App;
